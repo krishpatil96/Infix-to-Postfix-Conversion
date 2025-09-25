@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infix to Postfix Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">Infix to Postfix Conversion </h1>
+
+  <div class="container">
+    <input type="text" id="infixInput" placeholder="Enter infix expression">
+    <button onclick="startConversion()">Convert</button>
+    <button onclick="prevStep()">⬅ Prev</button>
+    <button onclick="nextStep()">Next ➡</button>
+    <button onclick="autoPlay()">▶ Auto Play</button>
+    <button onclick="resetVisualization()">⟲ Reset</button>
+  </div>
+
+  <div class="expression">
+    <h3>Scanning (Left to Right):</h3>
+    <p id="scanning"></p>
+  </div>
+
+  <div class="visualization">
+    <div>
+      <h3>Stack</h3>
+      <ul id="stack"></ul>
+    </div>
+    <div>
+      <h3>Postfix Expression</h3>
+      <p id="postfix"></p>
+    </div>
+  </div>
+
+  <div class="logBox">
+    <h3>Step Info:</h3>
+    <p id="log"></p>
+  </div>
+
+  <!-- ✅ JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
